@@ -1,5 +1,6 @@
 import 'package:app3/feature/home/view/Widgets/colors.dart';
 import 'package:app3/feature/home/view/screen/cards_screen.dart';
+import 'package:app3/feature_new/view/screen/sign%20_In_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -19,9 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
         if (mounted)
           {
             Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => const CardView(),
-              ),
+              MaterialPageRoute(builder: (context) => const SingnInScreen()),
             )
           }
       },

@@ -5,6 +5,7 @@ import 'package:app3/feature/home/view/Widgets/colors.dart';
 import 'package:app3/feature/home/view/screen/cards_screen.dart';
 import 'package:app3/feature/home/view/screen/success_screen.dart';
 import 'package:app3/feature/model/post_data.dart';
+import 'package:app3/profile_user/view/screen/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -20,7 +21,7 @@ class PostScreen extends StatelessWidget {
       child: Scaffold(
         drawer: const Drawer(
           width: 350,
-          child: CardView(),
+          child: profileScreen(),
         ),
         bottomNavigationBar: BottomNavigationBar(items: const [
           BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
