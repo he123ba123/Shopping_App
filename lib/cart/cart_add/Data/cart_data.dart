@@ -1,4 +1,3 @@
-import 'package:app3/core/style/value_id.dart';
 import 'package:app3/core/style/value_token.dart';
 import 'package:app3/cart/cart_add/model/addCartShowModel.dart';
 import 'package:dio/dio.dart';
@@ -12,8 +11,8 @@ class CartCat {
         data: {"nationalId": getId, "productId": id, "quantity": "1"});
 
     var data = response.data;
-    print("------------------------------------------------");
-    print(data);
+    // print("------------------------------------------------");
+    // print(data);
     return data;
   }
 
@@ -31,10 +30,10 @@ class CartCat {
               (e) => ModelAddCart.fromJson(e),
             )
             .toList();
-        print(
-            "************************************************************************");
-        print(listCart[2].image);
-        print(listCart[2].image);
+        // print(
+        //     "************************************************************************");
+        // print(listCart[2].image);
+        // print(listCart[2].image);
         return listCart;
       }
     } on DioException catch (error) {

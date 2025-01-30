@@ -1,11 +1,13 @@
+import 'package:app3/cart/view/screen/cart_screen.dart';
+import 'package:app3/home/favourite/view/screen/favourite_Screen.dart';
 import 'package:app3/home/catogeryCard/home/view/Widgets/colors.dart';
 import 'package:flutter/material.dart';
 
-AppBar appBarCart() {
+AppBar appBarLabtops(BuildContext context) {
   return AppBar(
     toolbarHeight: 90,
     title: const Text(
-      'Your Cart ',
+      'Labtops ',
       style: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 24,
@@ -21,18 +23,32 @@ AppBar appBarCart() {
     actions: [
       IconButton(
         icon: const Icon(
-          Icons.search,
+          Icons.shopping_cart,
           color: AppColors.buttonColorWhite,
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => const cartCatScreen()));
+        },
       ),
       IconButton(
         icon: const Icon(
-          Icons.notifications,
+          Icons.favorite,
           color: AppColors.buttonColorWhite,
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(
+              MaterialPageRoute(builder: (context) => const FavouriteScreen()));
+        },
       ),
+
+      // IconButton(
+      //   icon: const Icon(
+      //     Icons.notifications,
+      //     color: AppColors.buttonColorWhite,
+      //   ),
+      //   onPressed: () {},
+      // ),
       IconButton(
         icon: const Icon(
           Icons.more_vert,

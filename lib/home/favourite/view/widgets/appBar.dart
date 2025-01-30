@@ -1,11 +1,11 @@
 import 'package:app3/home/catogeryCard/home/view/Widgets/colors.dart';
 import 'package:flutter/material.dart';
 
-AppBar appBarCart() {
+AppBar appBarFavourite() {
   return AppBar(
     toolbarHeight: 90,
     title: const Text(
-      'Your Cart ',
+      'Favourite ',
       style: TextStyle(
         fontWeight: FontWeight.bold,
         fontSize: 24,

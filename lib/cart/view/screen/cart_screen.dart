@@ -1,7 +1,7 @@
 import 'package:app3/cart/cart_add/cubit/cart_add_cubit.dart';
 import 'package:app3/cart/cart_add/cubit/cart_add_state.dart';
 import 'package:app3/cart/view/widgets/appBar.dart';
-import 'package:app3/feature/home/view/Widgets/colors.dart';
+import 'package:app3/home/catogeryCard/home/view/Widgets/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -29,12 +29,15 @@ class cartCatScreen extends StatelessWidget {
                             CartAddCubit.get(context).deleteCartCubic(
                                 ProductId: state.listCart[index].image);
                           },
-                          icon: const Icon(Icons.delete),
+                          icon: const Icon(Icons.delete, color: Colors.red),
                           color: AppColors.buttonColorGray,
                         ),
                         title: Text(state.listCart[index].name),
-                        subtitle:
-                            Text(state.listCart[index].quantity.toString()),
+                        subtitle: Text(
+                          " Quantity :${state.listCart[index].quantity.toString()}",
+                          style: const TextStyle(
+                              color: AppColors.textColor, fontSize: 15),
+                        ),
                         leading: SizedBox(
                             height: 100,
                             width: 100,
