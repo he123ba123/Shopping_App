@@ -24,29 +24,28 @@ A complete e-commerce mobile application developed using **Flutter**, allowing u
 - Bloc / Cubit  
 - Dio (for API calls)  
 - Shared Preferences (for saving data like token)  
-- Clean Architecture  
-- Firebase (already configured)
 
 ---
 
 ## 📁 Project Structure
-lib/
-├── cart/
-├── core/
-│ ├── block/
-│ ├── helper/
-│ ├── style/
-│ ├── validator/
-│ └── widgets/
-├── home/
-│ ├── auth/
-│ ├── categoryCard/
-│ ├── favourite/
-│ ├── lap_category/
-│ ├── logIn/
-│ └── profile_user/
-└── main.dart
 
+<img width="440" height="476" alt="image" src="https://github.com/user-attachments/assets/f31d0411-8388-4827-8eb1-300e9319bf04" />
+
+---
+
+## 🖼️ Screenshots
+### 🔐 Login Page
+
+<img width="455" height="943" alt="Screenshot 2025-01-30 172833" src="https://github.com/user-attachments/assets/dc537503-7697-4295-b547-a3fe324c21d3" />
+
+### 🏠 Home Page
+
+<img width="444" height="936" alt="Screenshot 2025-01-30 194424" src="https://github.com/user-attachments/assets/6d8761c2-b417-42f7-8ee5-2d4d2421549c" />
+<img width="450" height="936" alt="Screenshot 2025-01-30 194455" src="https://github.com/user-attachments/assets/3c69e150-6bdc-4620-8bbf-257a8a3e0c4e" />
+
+### 🛒 Product Card
+
+<img width="446" height="943" alt="Screenshot 2025-01-30 194549" src="https://github.com/user-attachments/assets/43e367dd-f8f4-4f5a-8038-0875f8f3f8a7" />
 
 ---
 
@@ -56,6 +55,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/your-username/Shopping_App.git
+
 
 
 
