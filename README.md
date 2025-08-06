@@ -30,4 +30,32 @@ A complete e-commerce mobile application developed using **Flutter**, allowing u
 ---
 
 ## 📁 Project Structure
+lib/
+├── cart/
+├── core/
+│ ├── block/
+│ ├── helper/
+│ ├── style/
+│ ├── validator/
+│ └── widgets/
+├── home/
+│ ├── auth/
+│ ├── categoryCard/
+│ ├── favourite/
+│ ├── lap_category/
+│ ├── logIn/
+│ └── profile_user/
+└── main.dart
+
+
+---
+
+## ▶️ Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/Shopping_App.git
+
+
 
